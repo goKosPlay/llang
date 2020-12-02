@@ -58,7 +58,7 @@ func Run() {
 				panic(err)
 			}
 			langData = ConvertLang{ZhCn: keyword, En: enLang, Khmer: khmerLang}
-			status = 1
+			status = 0
 			message = "found current data!!"
 		}
 		ctx.JSON(200, Message{Status: status, Message: message, Data: langData})
